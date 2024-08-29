@@ -32,13 +32,16 @@
         }
         section {
             display: flex; /* Use flexbox to position the content and image side by side */
-            align-items: flex-start; /* Align items at the start */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
             padding: 20px;
             background-color: #fff; /* Background color for the main text area */
             color: #000; /* Text color for the main content */
-            margin: 0 5%; /* Adjusted margin to move content inward */
+            margin: 0 auto; /* Center the section horizontally */
             max-width: 1200px; /* Increased max-width to accommodate both text and image */
-            gap: 40px; /* Increased space between text and image */
+            gap: 40px; /* Space between text and image */
+            height: 100vh; /* Full viewport height to center content vertically */
+            box-sizing: border-box; /* Ensure padding and border are included in the width and height */
         }
         .text-content {
             flex: 1; /* Allow text content to take up remaining space */
@@ -75,7 +78,7 @@
             <p>This is a placeholder for your bio. You can provide a brief description of yourself, your background, and your interests here.</p>
         </div>
         <div class="image-content">
-            <img src="Cl8onRob.github.io/webpic.JPG" alt="Cleighton Roberts"> <!-- Updated image path -->
+            <img src="https://Cl8onRob.github.io/webpic.JPG" alt="Cleighton Roberts"> <!-- Updated image path -->
         </div>
     </section>
 
