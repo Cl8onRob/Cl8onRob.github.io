@@ -30,20 +30,15 @@
         nav a.active {
             text-decoration: underline;
         }
-        <!-- 
-            section { 
+        section {
             display: flex; /* Use flexbox to position the content and image side by side */
-            align-items: center; /* Center items vertically */
-            justify-content: center; /* Center items horizontally */
+            align-items: flex-start; /* Align items at the start */
             padding: 20px;
             background-color: #fff; /* Background color for the main text area */
             color: #000; /* Text color for the main content */
-            margin: 0 auto; /* Center the section horizontally */
+            margin: 0 10%; /* Halved the margin */
             max-width: 1200px; /* Increased max-width to accommodate both text and image */
-            gap: 40px; /* Space between text and image */
-            height: 100vh; /* Full viewport height to center content vertically */
-            box-sizing: border-box; /* Ensure padding and border are included in the width and height */
-            -->
+            gap: 20px; /* Space between text and image */
         }
         .text-content {
             flex: 1; /* Allow text content to take up remaining space */
@@ -67,7 +62,6 @@
     </style>
 </head>
 <body>
-
     <nav>
         <a href="index.html" class="active">Home</a>
         <a href="blog.html">Blog</a>
@@ -80,7 +74,7 @@
             <p>This is a placeholder for your bio. You can provide a brief description of yourself, your background, and your interests here.</p>
         </div>
         <div class="image-content">
-            <img src="Cl8onRob.github.io/webpic.JPG" alt="Cleighton Roberts">
+            <img src="Cl8onRob.github.io/webpic.JPG" alt="Cleighton Roberts"> <!-- No label, just image -->
         </div>
     </section>
 
