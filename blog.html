@@ -3,71 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Home - Cleighton Roberts</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Helvetica, Arial, sans-serif; /* Font family for the body text */
+            font-weight: normal; /* Ensure body text is not bold */
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
+            background-color: #fff; /* Background color for the body */
+            color: #821131; /* Default text color */
         }
         nav {
             display: flex;
             justify-content: center;
-            background: #444;
-            padding: 10px;
+            background: #E85C0D;
+            padding: 15px;
+            margin: 0;
         }
         nav a {
-            color: #fff;
-            margin: 0 15px;
+            color: #821131;
+            margin: 0 20px;
             text-decoration: none;
+            font-weight: bold; /* Make navigation text bold */
+        }
+        nav a.active {
+            text-decoration: underline;
         }
         section {
-            padding: 20px;
+            display: flex; /* Use flexbox to position the content and image side by side */
+            align-items: flex-start; /* Align items at the start */
+            padding: 80px;
+            background-color: #fff; /* Background color for the main text area */
+            color: #000; /* Text color for the main content */
+            max-width: 1200px; /* Maximum width for the section */
+            margin: 0 auto; /* Center align the section */
+            gap: 20px; /* Space between text and image */
+        }
+        .text-content {
+            flex: 1; /* Allow text content to take up remaining space */
+        }
+        .text-content h2 {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 2.5em; /* Adjust the header size */
+        }
+        .image-content img {
+            width: 400px; /* Set image width */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure the image fits well */
         }
         footer {
-            background: #333;
-            color: #fff;
+            background: #E85C0D;
+            color: #821131;
             text-align: center;
-            padding: 10px;
-        }
-        footer a {
-            color: #fff;
-            text-decoration: none;
+            padding: 20px;
+            margin-top: 100px; /* Move the footer farther down */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Blog</h1>
-    </header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="blog.html" class="active">Blog</a>
         <a href="contact.html">Contact</a>
     </nav>
     
-    <section>
-        <h2>Blog</h2>
-        <div class="blog-post">
-            <h3><a href="#">Blog Post 1</a></h3>
-            <p>Summary of Blog Post 1. <a href="#">Read more</a></p>
-        </div>
-        <div class="blog-post">
-            <h3><a href="#">Blog Post 2</a></h3>
-            <p>Summary of Blog Post 2. <a href="#">Read more</a></p>
-        </div>
-        <!-- Add more blog posts as needed -->
-    </section>
+
 
     <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <p>© 2024 Cleighton Roberts. All rights reserved.</p>
     </footer>
 </body>
 </html>
