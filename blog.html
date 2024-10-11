@@ -6,13 +6,13 @@
     <title>Home - Cleighton Roberts</title>
     <style>
         body {
-            font-family: Helvetica, Arial, sans-serif; /* Font family for the body text */
-            font-weight: normal; /* Ensure body text is not bold */
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: normal;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #fff; /* Background color for the body */
-            color: #821131; /* Default text color */
+            background-color: #fff;
+            color: #821131;
         }
         nav {
             display: flex;
@@ -25,39 +25,55 @@
             color: #821131;
             margin: 0 20px;
             text-decoration: none;
-            font-weight: bold; /* Make navigation text bold */
+            font-weight: bold;
         }
         nav a.active {
             text-decoration: underline;
         }
+        .article-box {
+            border: 2px solid #E85C0D; /* Box border color */
+            padding: 20px;
+            margin: 20px auto; /* Center align the box */
+            max-width: 600px; /* Maximum width for the box */
+            background-color: #f9f9f9; /* Light background for the box */
+            text-align: center; /* Center text inside the box */
+        }
+        .article-box a {
+            color: #E85C0D; /* Link color */
+            font-weight: bold; /* Make link bold */
+            text-decoration: none; /* Remove underline */
+        }
+        .article-box a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
         section {
-            display: flex; /* Use flexbox to position the content and image side by side */
-            align-items: flex-start; /* Align items at the start */
+            display: flex;
+            align-items: flex-start;
             padding: 80px;
-            background-color: #fff; /* Background color for the main text area */
-            color: #000; /* Text color for the main content */
-            max-width: 1200px; /* Maximum width for the section */
-            margin: 0 auto; /* Center align the section */
-            gap: 20px; /* Space between text and image */
+            background-color: #fff;
+            color: #000;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
         }
         .text-content {
-            flex: 1; /* Allow text content to take up remaining space */
+            flex: 1;
         }
         .text-content h2 {
             font-family: 'Helvetica', sans-serif;
-            font-size: 2.5em; /* Adjust the header size */
+            font-size: 2.5em;
         }
         .image-content img {
-            width: 400px; /* Set image width */
-            height: auto; /* Maintain aspect ratio */
-            object-fit: cover; /* Ensure the image fits well */
+            width: 400px;
+            height: auto;
+            object-fit: cover;
         }
         footer {
             background: #E85C0D;
             color: #821131;
             text-align: center;
             padding: 20px;
-            margin-top: 100px; /* Move the footer farther down */
+            margin-top: 100px;
         }
     </style>
 </head>
@@ -67,8 +83,11 @@
         <a href="blog.html" class="active">Blog</a>
         <a href="contact.html">Contact</a>
     </nav>
-    
 
+    <div class="article-box">
+        <a href="wifm1.html">Understanding Web Development</a>
+        <p>October 10, 2024</p>
+    </div>
 
     <footer>
         <p>© 2024 Cleighton Roberts. All rights reserved.</p>
