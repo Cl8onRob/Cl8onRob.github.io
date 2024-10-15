@@ -26,11 +26,12 @@
             flex-wrap: wrap;
             margin-top: 20px; /* Add some space above the image container */
         }
-        .small-img {
-            max-width: 50%; /* Return to previous size for last two images */
+        figure {
+            text-align: center; /* Center the caption below the image */
+            margin: 0 10px; /* Add some horizontal margin */
         }
-        .left, .right {
-  display: inline-block;
+        .small-img {
+            max-width: 45%; /* Size for the last two images */
         }
     </style>
 </head>
@@ -41,15 +42,16 @@
 
     <p>That being said, I have seen it grow in captivity like this. A year ago I tried to see how small I could grow a Pleurotus ostreatus colony while still allowing it to yield mushrooms. I 3D printed a box about 8x8x17 centimeters fitted with the necessary holes for the mushrooms to breathe, manage moisture, and grow. Unfortunately, even though I watered and used a bag to retain moisture, the amount of holes compared to the small amount of substrate led to a low humidity environment, and this is what I suspect causes this strange clubbing effect on the oyster mushrooms.</p>
 
-    <figure class="left">
-        <img class="small-img" src="healthy_oyster_mushroom_growth.jpg">
-        <figcaption>"Healthy Oyster Mushroom Growth"</figcaption>
-    </figure>
-    <figure class="right">
-        <img class="small-img" src="dry_oyster_mushroom_growth.jpg">
-        <figcaption>"Dry Oyster Mushroom Growth"</figcaption>
-    </figure>    
-
+    <div class="image-container">
+        <figure>
+            <img class="small-img" src="healthy_oyster_mushroom_growth.jpg" alt="Healthy Oyster Mushroom Growth">
+            <figcaption>Healthy Oyster Mushroom Growth</figcaption>
+        </figure>
+        <figure>
+            <img class="small-img" src="dry_oyster_mushroom_growth.jpg" alt="Dry Oyster Mushroom Growth">
+            <figcaption>Dry Oyster Mushroom Growth</figcaption>
+        </figure>
+    </div>
 
     <p>I also suspect that this clubbing effect only happens with the Pleurotus ostreatus varieties that are meant for cultivating. The batch that I had was grown from a mushroom I found at Winco in which its own mycelium was beginning to colonize itself. I could only imagine that the mushrooms growing in that walk-in were contaminated and colonized by a store bought one that was meant to go on someone's plate. Of course, Pleurotus ostreatus does grow everywhere, it dissolves substrate using oxalic acid, a.k.a Barkeepers friend, so it could’ve very well reached that point in the wall under the right conditions. On the other hand, why would a barkeep be mad at that mushroom? After all, it is a natural source of his friend.</p>
 </body>
