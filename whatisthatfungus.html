@@ -21,17 +21,17 @@
             margin-top: 5px;
         }
         .image-container {
-            display: flex;
-            justify-content: space-around; /* Space out the two images */
-            flex-wrap: wrap;
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space out the two images */
             margin-top: 20px; /* Add some space above the image container */
         }
         figure {
             text-align: center; /* Center the caption below the image */
             margin: 0 10px; /* Add some horizontal margin */
+            flex: 1; /* Allow figures to grow equally */
         }
         .small-img {
-            max-width: 45%; /* Size for the last two images */
+            max-width: 90%; /* Size for the last two images */
         }
     </style>
 </head>
