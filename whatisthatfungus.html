@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What is that Mushroom?</title>
+    <title>Mushroom Discussion</title>
     <style>
         body {
-            margin: 20px 1.5in; /* 1.5 inches margin on both sides */
+            margin: 60px 4.5in; /* Triple the margin to 4.5 inches on both sides */
             text-align: left;
         }
         img {
             display: block;
             margin: 10px auto;
-            max-width: 50%; /* Halve the size */
+            max-width: 50%; /* Halve the size for the main image */
             height: auto;
+        }
+        .small-img {
+            max-width: 30%; /* Smaller size for the last two images */
         }
         .label {
             text-align: center;
@@ -36,8 +39,8 @@
     <p>That being said, I have seen it grow in captivity like this. A year ago I tried to see how small I could grow a Pleurotus ostreatus colony while still allowing it to yield mushrooms. I 3D printed a box about 8x8x17 centimeters fitted with the necessary holes for the mushrooms to breathe, manage moisture, and grow. Unfortunately, even though I watered and used a bag to retain moisture, the amount of holes compared to the small amount of substrate led to a low humidity environment, and this is what I suspect causes this strange clubbing effect on the oyster mushrooms.</p>
 
     <div class="image-container">
-        <img src="healthy_oyster_mushroom_growth.jpg" alt="Healthy Oyster Mushroom Growth">
-        <img src="dry_oyster_mushroom_growth.jpg" alt="Dry Oyster Mushroom Growth">
+        <img class="small-img" src="healthy_oyster_mushroom_growth.jpg" alt="Healthy Oyster Mushroom Growth">
+        <img class="small-img" src="dry_oyster_mushroom_growth.jpg" alt="Dry Oyster Mushroom Growth">
     </div>
     
     <div class="label">Normal Oyster Mushroom Growth</div>
